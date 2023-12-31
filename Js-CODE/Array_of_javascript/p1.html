@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+// For an given array with marks of student -->[85,97,46,37,76,60]
+// find the avg marks of entire class
+   let StudentMarks=[85,97,46,37,76,60];
+   let l=StudentMarks.length;
+   let temp=0;
+
+   for(let i=0; i<l; i++)
+   {
+       temp = temp+StudentMarks[i];   
+   }
+     let Avg= temp/l;
+     document.write(`Avrage Marks of Students is : ${Avg}`);
+    </Script>
+</body>
+</html>

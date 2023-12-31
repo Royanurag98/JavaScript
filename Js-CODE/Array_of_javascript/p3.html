@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Create an array to store companies --> ["Bloomberg", "Microsoft","Uber","Googel", "IBM","Netflix"]
+// Remove the first company from the array
+// Remove Uber and add ola in place of Uber
+// Add Amazon at the end.
+
+let companyName=["Bloomberg", "Microsoft","Uber","Googel", "IBM","Netflix"];
+  document.write("Array Items :",companyName,"<br><br>");
+ let x=companyName.splice(0,1);
+ document.write(`Remove the first company from the array :${x} <br>`);
+ document.write(companyName,"<br><br>");
+
+ let companyName1=["Bloomberg", "Microsoft","Uber","Googel", "IBM","Netflix"];
+ let y=companyName1.splice(2,1,"ola");
+ document.write(`Remove Uber and add ola in place of Uber :${y} <br>`);
+ document.write(companyName1,"<br><br>");
+
+ let companyName2=["Bloomberg", "Microsoft","Uber","Googel", "IBM","Netflix"];
+ let z=companyName2.splice(6,0,"Amazon");
+ document.write(`Add Amazon at the end. : ${z} <br>`);
+ document.write(companyName2,"<br><br>");
+
+
+    </script>
+</body>
+</html>

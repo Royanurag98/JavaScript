@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// When adding a number and a string, JavaScript will treat the number as a string.
+let Number= 36; //36Anurag
+let Name  = "Anurag";
+document.write(Number+Name, "<br>");
+
+
+//JavaScript evaluates expressions from left to right.
+let n = 16 + 4 + "Volvo"// 20Volvo
+document.write(n, "<br>");
+let m = "Anurag" +16 + 4; //since the first operand is a string, all operands are treated as strings. 
+document.write(m , "<br>");// Anurag164
+
+//JavaScript has dynamic types. This means that the same variable can be used to
+// hold different data types
+
+let x;         // Now x is undefined
+x = 5;         // Now x is a Number
+x = "John";    // Now x is a String
+document.write(x, "<br>");
+document.write(typeof(x));
+    </script>
+</body>
+</html>

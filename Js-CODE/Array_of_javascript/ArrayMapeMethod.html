@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Mape Method</title>
+</head>
+<body>
+    map method is use to create a new array with the result on some opertion.
+    the value its callback return are used to form anew array.
+    arr.mpa(value,index,arr)
+    <script>
+        let arr=[20,30,40,50];
+        let newArray=arr.map((value) =>{
+            return value*2;// we can perform various operation with return value
+        });
+        document.write("<br>",newArray,"<br>");
+
+    //Array of object
+    // if you want to create a new array with object value you can youse map function
+    let arr2=[
+        {fname:"Anurag",lname:"Kumar" },
+        {fname:"ravi",lname:"Kumar" },
+        {fname:"Rohan",lname:"Kumar" }
+    ];
+    let NewArr=arr2.map((value)=>{
+        return value.fname + " " + value.lname;
+    })
+    console.log(NewArr)
+
+    </script>
+</body>
+</html>

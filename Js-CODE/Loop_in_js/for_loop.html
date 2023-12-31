@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+<body>
+
+    <script>
+// // //Loops can execute a block of code again and gain.
+//         let sum=0;
+//         for(let i=1;i<=5;i++){
+//             sum= sum+i;    
+//         }
+//         document.write("Sum of 1 to 5 is :" ,sum);
+
+// // > And you can also leve expression 1 (like when your values are set before the loop starts):
+//         let sum1=0;
+//         let i=1;
+//         for( ;i<=5;i++){
+//             sum2= sum1+i;    
+//         }
+//         document.write("Sum of 1 to 5 is :" ,sum1); 
+
+// /* you can also omit expression 2, you must provide a break inside the loop.Otherwise the loop
+//   will never end.This will crash your browser. Read about breaks in a later chapter of this tutorial.*/
+//   let sum2=0;
+//         for( let i=1; ;i++){
+//             sum2= sum2+i; 
+//             if(i==4) 
+//             break  
+//         }
+//         document.write("Sum of 1 to 5 is :" ,sum2);
+
+// // // you can also be omitted expression 3. but you have to include increment of value inside the loop:
+// let sum3=0;
+//         for( let i=1; i<=5; ){
+//             sum3= sum3+i;  
+//             i++;
+//         }
+//         document.write("Sum of 1 to 5 is :" ,sum3);
+
+
+//Note
+// We can find length of array using length method 
+ let arr=[2,3,4,5,67,8,9];
+ len= arr.length;
+ document.write("length of array is :",len)
+
+ // We can also find length of string using length method.
+ let str = "Anurag Kumar";
+ length= str.length;
+ document.write("<br>length of string ",length)
+
+ // But we can not find length of obj using length method.
+//  We have to use object.keys(obj_name).length.
+  let obj ={
+     "Anurag":98,
+     "Rohan": 97,
+     "Priti":97
+    };
+
+    let length1=Object.keys(obj).length;
+    document.write("<br>Return length of obj",length1);
+    document.write("<br>Return all the keys of obj inside the array", Object.keys(obj))
+    for (let i=0; i<length1;i++)
+    {
+      document.write(`<br> ${Object.keys(obj)[i]} Got ${obj[Object.keys(obj)[i]]} marks`);// Return value of object  
+    }
+
+    </script>
+</body>
+</html>

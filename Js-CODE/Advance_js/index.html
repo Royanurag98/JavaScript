@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body></body>
+      // promises in js is for eventual completion of task(Means given task is perform eventualy but we cant say given task will be resolve or reject ,  ) .
+      // it is an object in js
+      // Create promise object
+       //for creating promise object we write 
+           // (promise is class) inside the promise we pass two fun
+       //new Promise()
+   
+  <script>
+    function getData(dataId, getNextData){
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+            console.log("data",dataId);
+            if(getNextData){
+                getNextData();
+            }
+        } , 2000);
+   
+        })
+    }
+                                             // Callback hell
+    getData(1,()=>{
+          console.log("Getting data 2...");
+          getData(2, ()=>{
+            console.log("Getting data 3...");
+            getData(3, ()=>{
+                console.log("Getting data 4...");
+               getData(4);  
+            });
+          });
+    });
+
+    
+    function getData(dataId){
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+            console.log("data",dataId);
+            resolve("Success");
+            }
+     , 2000);
+   
+        })
+    }
+
+                                                   // Promise chaning
+    getData(1)
+    .then((res)=>{
+        return getData(2);
+    })
+    .then((res)=>{
+        return getData(3);
+    })
+    .then((res)=>{
+       console.log("Success");
+    })
+
+
+    
+// Async-Await
+   //it is a keyword in js and it is use to make a simple and Understandable Asynchronize programming
+   // Async keyword is use with any function for making normal to Async function
+   // Async function returns a promise 
+
+// Await : it use to  pauses the execution of its surrounding async function until the promise is settled
+// othe word : Suppose we call a function and we know this function return a promise . if i write Await infron of
+// that function in that case Await Wait for promises with pauses the execution of its surrounding async function
+// Await keyword is only use with Async function
+   function getData(dataId){
+    return new Promise((resolve,reject) =>{
+        setTimeout(()=>{
+              console.log(" Data",dataId);
+              resolve("2000"); // Susseccful in srrver
+
+        },3000)
+    });
+   }
+   async function getAllData(){
+    console.log("Getting data 1......");
+    await getData(1);
+    console.log("Getting data 2......");
+    await getData(2);
+    console.log("Getting data 3......");
+    await getData(3);
+    console.log("Getting data 4......");
+    await getData(4);
+
+   }
+ 
+
+ </script>
+
+   
+
+</body>
+</html>

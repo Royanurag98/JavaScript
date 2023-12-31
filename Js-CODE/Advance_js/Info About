@@ -1,0 +1,19 @@
+                                            Sync in Js ?
+  >Synchronous 
+  Synchronous means the code runs in a particular sequence of instructions given in the program.
+  each instruction waits for previous instruction to complete its execution. 
+
+  in other word
+   Meaning of Synchronous in programming language is suppose you write a multiple line of instruction in your programm in a sequence . in that case all lines of code run one by one and second lines of code waits for the previous line when previous line of code is excuted now control of execution jump to the next nine.  
+
+   Due to synchronous programming sometimes important instruction get blocked due to some previous instruction , which causes a delay in the UI.
+   Asynchronous code execution allows to execute next instruction immediately and dosent block the flow of dcode
+
+   console.log("Hello");
+   console.log("Good Morning");
+   // setTimeout() execute a function according to user . means When we want to execute the function .we have to pass the time inside the setTimeout()  function
+   setTimeout(()=>{
+    console.log("Good After Noon");
+   }  4000);
+   console.log("Welcome");
+   console.log("Good night");

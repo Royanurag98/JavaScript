@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+// For an given array with price of 5 item -->[250,645,300,900,50], all the item have 
+//an offer 10% OFF on them. Change the array to store final price after discount.
+let itemPrice=[250,645,300,900,50];
+let temp;
+document.write("New price of All Items : <br> ")
+for(let i=0 ; i<itemPrice.length; i++)
+{
+   temp= (itemPrice[i] * 10)/100;
+  let AfDis=itemPrice[i]-temp;
+   document.write(`Original price of ${i} item is ${itemPrice[i]} After 10% discount then price of item is  ${AfDis} <br> `);
+}
+
+
+    </Script>
+</body>
+</html>

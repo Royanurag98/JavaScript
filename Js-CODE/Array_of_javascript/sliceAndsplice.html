@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Slice() : it is used to get array elements
+        let arr=[20,30,40,50,60]
+        document.write(arr.slice(1,3),"<br>");
+        document.write(arr.slice(2),"<br>");
+        document.write(arr.slice(-2),"<br>");
+        document.write(arr.slice(-2,-3),"<br>");
+
+    //Splice()
+
+    // use to delete the array element
+    let arr2=["Anurag","Priti","Kivata","Ravi"];
+    arr2.splice(1,2);// from tow index delet the array element
+    document.write(arr2,"<br>");
+    // Add element
+    let arr3=["Anurag","Priti","Kivata","Ravi"];
+    arr3.splice(1,0,"saroj");// Add element place of index 1  and shift forword of index one
+    document.write(arr3,"<br>");
+    //Replace 
+    let arr4=["Anurag","Priti","Kivata","Ravi"];
+    arr4.splice(2,1,"Kunal");// Delet element of index to and add element in place of index two
+    document.write(arr4,"<br>");
+
+
+
+    </script>
+</body>
+</html>

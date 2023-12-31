@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Create a game where you start any random game number . ask the user to
+        // keep guessing the game number until the user enter the correct value?
+
+        let gussNumber= 25;
+        let num = prompt("Enter you number");
+        let userInput=parseInt(num);
+
+        while (userInput != gussNumber)
+        {
+             userInput=prompt("Sorry your Guess Number is not matched with robo Guss again");
+        }
+        document.write("Conguralations you entered write number")
+    </script>
+</body>
+</html>

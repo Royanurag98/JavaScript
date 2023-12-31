@@ -1,0 +1,35 @@
+div{
+    width: 300px;
+    height: 300px;
+   
+    margin: 60px;
+    color: greenyellow;
+    text-align: center;
+    border:5px solid black;
+    box-shadow: 5px 5px 3px 5px;
+    border-radius: 5px;
+}
+.green{
+    background-color: rgb(6, 136, 43);
+  color:white;
+}
+.blue{
+    background-color: rgb(50, 11, 205);
+    color: white;
+}
+.red{
+    background-color: red;
+  color:white;
+}
+.yellow{
+    background-color:yellow;
+    color: white;
+}
+.pink{
+    background-color: rgb(136, 8, 74);
+  color:white;
+}
+.orange{
+    background-color: rgb(224, 137, 24);
+    color: white;
+}
